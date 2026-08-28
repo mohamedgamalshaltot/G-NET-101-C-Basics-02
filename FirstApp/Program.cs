@@ -26,6 +26,26 @@
             //Answer: This is a compile-time error because you cannot put text (string) into an int varible.
             // int pages = 464;
             #endregion
+            #region Question04
+
+            //4.Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot
+            //divide by zero", and then prints "Done" in a finally block.
+            try
+            {
+                int x = 10;
+                int y = 0;
+                int result = x/ y;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
+
+            #endregion
 
         }
 
